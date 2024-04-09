@@ -5,7 +5,7 @@ s = turtle.getscreen()
 t = turtle.Turtle() # starts at right:
 
 size = t.turtlesize()
-increase = (2 * num for num in size)
+increase = (2 * num for num in size) 
 t.turtlesize(*increase)
 
 t.pensize(5)
@@ -70,15 +70,15 @@ def go_down():
 
 
 def move_turtle(command):
-    if command == 'up':
+    if command == 'arriba':
         go_up()
-    elif command == 'down':
+    elif command == 'abajo':
         go_down()
-    elif command == 'left':
+    elif command == 'izquierda':
         go_left()
-    elif command == 'right':
+    elif command == 'derecha':
         go_right()
-    elif command == 'go':
+    elif command == 'adelante':
         t.forward(100)
-    elif command == 'stop':
+    elif command == 'parar':
         print('Stopping the turtle')
